@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyForms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Rellena mi Primer Forms</h1>
+        <p id="description">Este es mi primer forms de freecodeCamp</p>
+        <form action="" id="survey-form" method="post">
+            <div>
+                <label for="name" id="name-label" class="nombre">Nombre: </label>
+                    <input type="text" required id="name" placeholder="Ian Beckford">
+            </div>
+            <div class="datos-forms">
+                <label for="email" id="email-label">Email: </label>
+                    <input type="email" required id="email" placeholder="beckfordian1301@gmail.com">
+            </div>
+            <div class="datos-forms">
+                <label for="number" id="number-label">Edad: </label>
+                    <input type="number" name="" id="number" max="200" min="10" placeholder="23">
+            </div>            
+            <div class="datos-forms">
+                <label for="dropdown">Que parte mejorarias de mi codigo?</label>
+                    <select name="" id="dropdown">
+                        <option value="">Selecciona uno</option>
+                        <option value="1">HTML</option>
+                        <option value="2">CSS</option>
+                        <option value="3">Creatividad</option>
+                        <option value="4">Otro</option>
+                    </select>
+            </div>
+            <div class="datos-forms">
+                <label for="">Género:</label>
+                    <label for="masculino"><input type="radio" name="genero" id="masculino" value="masculino">Masculino</label>
+                    <label for="femenino"><input type="radio" name="genero" id="femenino" value="femenino">Femenino</label>
+                    <label for="otro"><input type="radio" name="genero" id="otro" value="otro">Otro</label>
+            </div>        
+            <div class="datos-forms">
+                <label for="">De que area de la tecnología ha trabajado?</label>
+                    <label for=""><input type="checkbox" name="" id="" value="programador">Progrmador</label>
+                    <label for=""><input type="checkbox" name="" id="" value="disenador">Diseñador</label>
+                    <label for=""><input type="checkbox" name="" id="" value="analista">Analista de requerimientos</label>
+                    <label for=""><input type="checkbox" name="" id="" value="qa">QA</label>
+                    <label for=""><input type="checkbox" name="" id="" value="scrum">Scrum Master</label>
+                    <label for=""><input type="checkbox" name="" id="" value="lider">Lider Tecnico</label>
+                    <label for=""><input type="checkbox" name="" id="" value="seguridad">Seguridad de la informacion</label>
+            </div>  
+            <div class="datos-forms">
+                <label for="">Alguna sugerencia para mi codigo?</label>
+                    <textarea name="" id="textarea" rows="10" cols="50"></textarea>
+            </div>
+             <div>
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
